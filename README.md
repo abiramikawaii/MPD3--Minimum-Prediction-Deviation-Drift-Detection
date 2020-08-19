@@ -1,4 +1,4 @@
-# MPD3-Minimum  Prediction  Deviation  Detection
+# MPD3-Minimum  Prediction  Deviation Drift Detection
 
 This repository contains supplemental material of the algorithm to detect concept drift named "Minimum Prediction Deviation Drift Detector" (MPD3). `MPD3.py` makes use of the minimum prediction deviation, a metric which quantifies the uncertainty a classifier's prediction on a particular sample is. The basic approach is to continuously monitor the MPD score for a number of predictions. If the 75\% quantile rise rises above a threshold it indicates that the model is no longer performing with a reliable consistency. We then we consider the data to have drifted. We can then either retrain the model (after obtaining labeled data) or take other reactive measures to prevent the performance degradation of the model. 
 
